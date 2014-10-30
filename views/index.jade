@@ -1,5 +1,18 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  script(type='text/javascript', src='/js/main.js')
+  h1#title= title
+  h2#subtitle An archive of grammatical portraits of books, short stories, essays and plays.
+  section#browse
+    h3 BROWSE COLLECTION
+    ul
+      li 
+        a(href='/color/hp1') Harry Potter and the Philosopher's Stone
+      li 
+        a(href='/color/vme') A Very Old Man with Enormous Wings
+      li 
+        a(href='/color/jc') Julius Caesar
+      li 
+        a(href='/color/lotr') Lord of the Rings
+

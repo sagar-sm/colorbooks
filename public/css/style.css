@@ -1,0 +1,62 @@
+body {
+  padding: 50px;
+  font: 0.9em "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+#title {
+  font-family: "Lato", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 5em;
+  font-weight: 100;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#subtitle {
+  color: #999;
+  font-family: "Lato", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  padding-left: 5px;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Lato", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+section#browse {
+  margin-top: 300px;
+}
+
+a {
+  text-decoration: none;
+  color: #00B7FF;
+}
+a:hover {
+  color: #0E4BA1;
+  transition: color 0.5s;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 5px 0;
+}
+
+#book {
+  font-size: 1em;
+}
+
+h2#chapter{
+  color: #555;
+  font-family: "Great Vibes", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+}
+
+
+

@@ -2,6 +2,16 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/css/style.css')
+    link(href='http://fonts.googleapis.com/css?family=Great+Vibes', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900', rel='stylesheet', type='text/css')
+
+    script(type='text/javascript', src='/js/vendor/jquery.min.js')
+    script(type='text/javascript', src='/js/vendor/p5.min.js')
+    script(type='text/javascript', src='/js/vendor/p5.dom.js')
+    script(type='text/javascript', src='/js/vendor/rita.js')
+    script(type='text/javascript', src='/js/vendor/rita_dict.js')
+    script(type='text/javascript', src='/js/vendor/rita_lts.js')
   body
+    img(src='/images/cb_logo1.png', width='50px')
     block content
