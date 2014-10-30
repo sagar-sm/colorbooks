@@ -1,8 +1,10 @@
 var text;
+var selectedBook;
+
 window.onload = function() {
   var params = window.location.href.split(/\//);
-  var book = params[params.length - 1];
-  $.get('/color/' + book + '/data', function(d){
+  selectedBook = params[params.length - 1];
+  $.get('/color/' + selectedBook + '/data', function(d){
     console.log(d);
     text = d.chapters[0].text;
     $('#book').text(d.name);
@@ -12,6 +14,28 @@ window.onload = function() {
     var colors = new p5(sc); 
   });
 }
+
+var palette = {
+  "hp1" : [
+    [183,71,60],
+    [80,67,70],
+    [55,66,64],
+    [17,63,62],
+    [337,81,43]],
+  "vme" : [
+    [56,98,76],
+    [35,87,60],
+    [353,48,50],
+    [298,19,33],
+    [208,39,30]],
+  "jc" : [
+    [150,100,100],
+    [35,87,60],
+    [353,48,50],
+    [298,19,33],
+    [208,39,30]] 
+};
+
 
 var sc = function(s) { 
 
@@ -39,13 +63,13 @@ var sc = function(s) {
 
     pos.forEach(function(p, i){
       if(lex.isNoun(p))
-        s.fill(216,100,100);
+        s.fill(palette[selectedBook][0][0], palette[selectedBook][0][1], palette[selectedBook][0][2]);
       else if(lex.isAdjective(p))
-        s.fill(50,100,100);
+        s.fill(palette[selectedBook][1][0], palette[selectedBook][1][1], palette[selectedBook][1][2]);
       else if(lex.isAdverb(p))
-        s.fill(180, 100,100);
+        s.fill(palette[selectedBook][2][0], palette[selectedBook][2][1], palette[selectedBook][2][2]);
       else if(lex.isVerb(p))
-        s.fill(82, 100,100);
+        s.fill(palette[selectedBook][3][0], palette[selectedBook][3][1], palette[selectedBook][3][2]);
       else
         s.fill(255);
       if(k > 60) {
