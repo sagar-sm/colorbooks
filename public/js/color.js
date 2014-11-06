@@ -29,7 +29,7 @@ var palette = {
     [298,19,33],
     [208,39,30]],
   "jc" : [
-    [150,100,100],
+    [150 ,100,100],
     [35,87,60],
     [353,48,50],
     [298,19,33],
@@ -78,7 +78,7 @@ var sc = function(s) {
       }
       else
         k++;
-      s.rect(k*rWidth, j*rHeight, rWidth, rHeight);
+      s.ellipse(k*rWidth, j*rHeight, rWidth, rHeight);
     });
   } 
 
