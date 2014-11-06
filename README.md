@@ -1,1 +1,1 @@
-https://colorbooks.heroku.com/
+http://colorbooks.heroku.com/
