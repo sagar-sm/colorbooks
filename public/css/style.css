@@ -43,6 +43,7 @@ ul {
 }
 
 li {
+  font-family: 'Lato';
   list-style: none;
   padding: 0;
   margin: 4px 0 5px 0;
@@ -58,5 +59,15 @@ h2#chapter{
   font-size: 2.5em;
 }
 
+#browse ul li {
+  font-size: 3.5em;
+  font-weight: 300;
+  /*display: inline-block;*/
+  /*width: 330px;*/
+  /*background: #eee;*/
+  margin: 10px;
+  /*border-width: 0;*/
+  /*border-radius: 3px;*/
+}
 
 

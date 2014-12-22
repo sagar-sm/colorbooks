@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  script(type='text/javascript', src='/js/printer.js')
+  button(name='print', value='print', id='printBtn') Print
+  button(name='printMeta', value='printMeta', id='printMetaBtn') PrintMeta
+  span#status
